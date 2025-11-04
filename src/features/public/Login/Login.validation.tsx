@@ -1,9 +1,9 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import z from "zod";
-import { InputCustom } from "../../shared/components";
+import { InputCustom } from "../../../shared/components";
 import { Navigate, useNavigate } from "react-router-dom";
-import { useSessionStore } from "../../store/sessionStore";
+import { useSessionStore } from "../../../store/sessionStore";
 
 const loginSchema = z.object({
     email: z.email("Correo inválido").min(1, "El correo es obligatorio"),

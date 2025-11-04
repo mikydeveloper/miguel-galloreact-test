@@ -1,8 +1,8 @@
 import { useState } from "react";
 import type { ApiResponse } from "./interfaces";
-import { useFetch } from "../../hooks/useFetch";
 import { Table } from "./components/table/Table";
-import { ENV } from "../../config/env";
+import { ENV } from "../../../config/env";
+import { useFetch } from "../../../hooks/useFetch";
 
 export const RickMorty = () => {
     const [page, setPage] = useState(1);

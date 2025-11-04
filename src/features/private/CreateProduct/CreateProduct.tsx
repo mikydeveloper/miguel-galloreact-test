@@ -2,9 +2,9 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { productSchema, type FormValues } from "./CreateProductForm";
-import { usePost } from "../../hooks/usePost";
 import { PRODUCT_URL } from "./CreateProduct.constants";
 import type { ProductResponse } from "./CreateProduct.interface";
+import { usePost } from "../../../hooks/usePost";
 
 export const CreateProduct = () => {
     const [result, setResult] =

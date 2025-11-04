@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import { useFetch } from "../../hooks/useFetch";
 import type { Product } from "./interfaces/Product";
-import { ENV } from "../../config/env";
+import { ENV } from "../../../config/env";
+import { useFetch } from "../../../hooks/useFetch";
 
 export const ProductDetail = () => {
     const { id } = useParams<{ id: string }>();

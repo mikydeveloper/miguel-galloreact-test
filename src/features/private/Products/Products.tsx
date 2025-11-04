@@ -1,8 +1,8 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
-import { useFetch } from "../../hooks/useFetch";
 import type { Product } from "./interfaces/Product";
-import { ENV } from "../../config/env";
+import { ENV } from "../../../config/env";
+import { useFetch } from "../../../hooks/useFetch";
 
 
 export const Products = () => {
